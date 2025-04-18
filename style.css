@@ -33,6 +33,7 @@ header {
 .navigation {
     color: white;
     max-width: 1400px;
+    padding: 0 2em;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -50,6 +51,7 @@ nav a {
 main {
     min-width: 100px;
     max-width: 1400px;
+    padding: 0 2em;
     width: 100%;
     margin-top: 6em;
     margin-left: auto;
@@ -59,19 +61,70 @@ main {
 
 .about {
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
-    gap: 1.5em;
+    gap: 8em;
+}
+
+.about-text {
+    text-align: justify;
 }
 
 .profile-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.profile-pic img {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid #ccc;
 }
+.profile-pic p {
+    margin: 0.5em 0;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
 
+.profile-pic .download-cv {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.profile-pic .download-cv:hover {
+    background-color: #0056b3;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0;
+}
+
+.skill-tags span {
+    background-color: #d1d1f1;
+    color: #1e1e2f;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 
 footer {
     background-color: #1e1e2f;
@@ -82,6 +135,7 @@ footer {
 }
 
 footer p {
+    padding: 0 2em;
     max-width: 1400px;
     margin-left: auto;
     margin-right: auto; 
