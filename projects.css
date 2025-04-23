@@ -1,0 +1,69 @@
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    gap: 1rem;
+}
+
+.project img {
+    width: 15vw; 
+    height: auto;
+    max-width: 100px;
+    object-fit: contain;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.project-details {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.project h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    margin-right: 0.5rem;
+    display: inline;
+}
+
+.project p {
+    font-size: 0.875rem;
+    color: #666;
+    display: inline;
+}
+
+.project a {
+    margin-left: auto;
+}
+
+.project a img {
+    width: 18px;
+    height: 18px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.project a img:hover {
+    opacity: 1;
+}
+
+/* Personal Projects Section (Visually Grouped) */
+/* .personal-projects {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+}
+
+.personal-projects h3 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+} */
