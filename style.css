@@ -167,8 +167,9 @@ main {
 }
 
 footer {
+    flex-shrink: 0;
     color: white;
-    margin-top: 2em;
+    margin-top: 6em;
     width: 100%;
     overflow-x: hidden;
 }
