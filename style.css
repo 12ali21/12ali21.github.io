@@ -13,6 +13,39 @@ body {
     box-sizing: inherit;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #1e1e2f;
+    width: 100%;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    color: white;
+    max-width: 1400px;
+    padding: 1em 2em;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navigation h2 {
+    margin: 0;
+}
+
+.navigation nav {
+    margin-left: auto;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-left: 1em;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -22,30 +55,6 @@ body {
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
-}
-
-header {
-    background-color: #1e1e2f;
-    width: 100%;
-
-}
-
-.navigation {
-    color: white;
-    max-width: 1400px;
-    padding: 0 2em;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding-left: 1em;
 }
 
 main {
@@ -59,26 +68,23 @@ main {
     flex: 1
 }
 
-.about {
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
-    gap: 4em;
-}
-
 .about-text {
     text-align: justify;
     flex: 3;
 }
 
+.about {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 4em;
+    align-items: start;
+}
+
 .profile-pic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2em;
-    flex: 1;
-    margin-bottom: 2em;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    margin: 2em 0;
 }
 
 .profile-pic img {
@@ -92,6 +98,7 @@ main {
     border-radius: 50%;
     border: 2px solid #ccc;
 }
+
 .profile-pic p {
     margin: 0.5em 0;
     font-size: 1rem;
@@ -148,5 +155,24 @@ footer p {
     padding: 0 2em;
     max-width: 1400px;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+}
+
+
+@media (max-width: 768px) {
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        order: -1;
+    }
+
+    .navigation h2 {
+        font-size: 1.2rem;
+    }
+
+    .navigation nav a {
+        font-size: 0.9rem;
+    }
 }
