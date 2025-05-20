@@ -101,7 +101,7 @@ main {
 .profile-pic p {
     margin: 0.5em 0;
     font-size: 1rem;
-    color: #555;
+    color: #1d1d1d;
     text-align: center;
 }
 
@@ -111,21 +111,16 @@ main {
     padding: 0.5em 1em;
     font-size: 0.9rem;
     color: white;
-    background-color: #007BFF;
+    background-color: #0055af;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     text-align: center;
-
-    /* not available yet */
-    background-color: #ccc;
-    color: #666;
-    cursor: not-allowed;
 }
 
-/* .profile-pic .download-cv:hover {
-    background-color: #0056b3;
-} */
+.profile-pic .download-cv:hover {
+    background-color: #00264e;
+}
 
 #skills {
     padding: 2rem 0;
